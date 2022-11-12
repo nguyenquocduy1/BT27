@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_green_light"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Add new song"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#1ce31c"/>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Album"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_weight="10"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittextNameSong"
+        android:hint="Name song"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <EditText
+        android:id="@+id/edittextCreateDate"
+        android:hint="Publication date"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnAddSong"
+            android:text="Add song"
+            android:layout_width="300dp"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSong"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnExit"
+            android:text="Exit"
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+</LinearLayout>
